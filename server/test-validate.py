@@ -125,6 +125,7 @@ async def main(argv):
   update_ring_frequency(config_data)
 
   # now load the plc/assets referenced in the site topology file...
+  plc_item_data_count_all = 0
   Log.info(logger_namespace + " Loading %s" % "Site Topology File (site-topology.json)")
   config_data = load_site_topology()
   Log.info(logger_namespace + " Enumerating Sites and PLC's")
@@ -139,6 +140,11 @@ async def main(argv):
       plc_item = PlcItem(Log, plc_filename, plc_name)
       plc_item_data =  plc_item.data
       Log.info(logger_namespace + " PLC Name: %s" % plc_item_data["Name"])
+      plc_item_data_count = len(plc_item_data["Variables"])
+      Log.info(logger_namespace + " PLC Variable Count: %s" % plc_item_data_count)
+      plc_item_data_count_all += (plc_item_data_count * plc_count)
+      Log.info(logger_namespace + " PLC All Variable Count: %s" % plc_item_data_count_all)
+      
 
 
 

@@ -1,5 +1,5 @@
 {
-  "_last-accessed": "2023-02-23 13:39:29.854471",
+  "_last-accessed": "2023-02-23 14:33:41.977846",
   "Sites": [
     {
       "SiteName": "Burien 001",
@@ -19,6 +19,64 @@
             "West",
             "East",
             "North-East"
+          ]
+        },
+        {
+          "PlcName": "kitchen-fryer",
+          "PlcCount": 16,
+          "PlcTags": [
+            "South-right",
+            "South-middle-right",
+            "South-middle-left",
+            "South-left",
+            "West-right",
+            "West-middle-right",
+            "West-middle-left",
+            "West-left",
+            "East-right",
+            "East-middle-right",
+            "East-middle-left",
+            "East-left",
+            "North-East-right",
+            "North-East-middle-right",
+            "North-East-middle-left",
+            "North-East-left"
+          ]
+        },
+        {
+          "PlcName": "standing-fridge",
+          "PlcCount": 29,
+          "PlcTags": [
+            "South-cavas-front-bar",
+            "South-cavas-middle-bar",
+            "South-shuckers-front-bar",
+            "South-shuckers-middle-bar",
+            "South-shuckers-back-bar",
+            "South-shuckers-middle-kitchen",
+            "South-shuckers-front-kitchen",
+            "South-shuckers-front-waitstaff",
+            "West-right",
+            "West-middle-right",
+            "West-middle-left",
+            "West-left",
+            "East-right",
+            "East-middle-right",
+            "East-middle-left",
+            "East-left",
+            "North-East-right",
+            "North-East-middle-right",
+            "North-East-middle-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left",
+            "North-East-left"
           ]
         }
       ]
