@@ -1,0 +1,27 @@
+{
+  "_last-accessed": "2023-02-23 13:39:29.854471",
+  "Sites": [
+    {
+      "SiteName": "Burien 001",
+      "PlcList": [
+        {
+          "PlcName": "hvac-system",
+          "PlcCount": 1,
+          "PlcTags": [
+            "Main"
+          ]
+        },
+        {
+          "PlcName": "walkin-freezer",
+          "PlcCount": 4,
+          "PlcTags": [
+            "South",
+            "West",
+            "East",
+            "North-East"
+          ]
+        }
+      ]
+    }
+  ]
+}

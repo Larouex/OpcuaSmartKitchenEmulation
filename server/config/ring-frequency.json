@@ -1,0 +1,63 @@
+{
+  "_last-accessed": "2023-02-23 13:39:29.857527",
+  "TelemetryRingsInSeconds": [
+    "Frequency",
+    {
+      "Ring0": 1
+    },
+    {
+      "Ring1": 5
+    },
+    {
+      "Ring2": 10
+    },
+    {
+      "Ring3": 15
+    },
+    {
+      "Ring4": 20
+    },
+    {
+      "Ring5": 30
+    },
+    {
+      "Ring6": 40
+    },
+    {
+      "Ring7": 50
+    }
+  ],
+  "TelemetryRingsInMinutes": [
+    "Frequency",
+    {
+      "Ring0": 1
+    },
+    {
+      "Ring1": 5
+    },
+    {
+      "Ring2": 10
+    },
+    {
+      "Ring3": 15
+    },
+    {
+      "Ring4": 20
+    },
+    {
+      "Ring5": 30
+    },
+    {
+      "Ring6": 40
+    },
+    {
+      "Ring7": 50
+    },
+    {
+      "Ring8": 60
+    },
+    {
+      "Ring9": 120
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "Alerts": {
+    "Config": {
+      "Loaded": "Loaded Config file: {0}",
+      "Updated": "Updated Config file: {0}"
+    },
+    "SiteTopology": {
+      "Loaded": "Loaded Site Topology file: {0}",
+      "Updated": "Updated Site Topology file: {0}"
+    },
+    "RingFrequency": {
+      "Loaded": "Loaded Ring Frequency file: {0}",
+      "Updated": "Updated Ring Frequency file: {0}"
+    },
+    "hvac-system": {
+      "Loaded": "Loaded HVAC System file: {0}",
+      "Updated": "Updated HVAC System file: {0}"
+    },
+    "walkin-freezer": {
+      "Loaded": "Loaded Walkin Freezer file: {0}",
+      "Updated": "Updated Walkin Freezer file: {0}"
+    }
+  }
+}

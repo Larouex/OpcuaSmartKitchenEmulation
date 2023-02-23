@@ -1,0 +1,89 @@
+{
+  "_last-accessed": "2023-02-23 11:56:09.167898",
+  "Name": "WalkinFreezer",
+  "InterfacelId": "urn:larouexsmartkitchen:WalkinFreezerInterface:1",
+  "InterfaceInstanceName": "WalkinFreezerInterface",
+  "Variables": [
+    {
+      "DisplayName": "Walkin Freezer Temperature",
+      "TelemetryName": "walkin_freezer_temperature",
+      "IoTCDataType": "float",
+      "Frequency": "Ring3",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [29.11, 30.02, 29.21, 30.34, 30.22, 29.23]
+    },
+    {
+      "DisplayName": "Walkin Freezer Humidity",
+      "TelemetryName": "walkin_freezer_humidity",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring3",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [54.1, 55.0, 54.3, 53.4, 55.1, 54.2, 55.4, 54.6, 53.7]
+    },
+    {
+      "DisplayName": "Walkin Freezer Door Open Count",
+      "TelemetryName": "walkin_freezer_door_open_count",
+      "IoTCDataType": "integer",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Door Open Count indicates the number of times the freezer is opened over an hourly period.",
+      "RangeValues": [7, 9, 5, 11, 15, 13, 17, 16, 14, 11, 10, 12, 5, 4, 1]
+    },
+    {
+      "DisplayName": "Walkin Freezer Door Ajar",
+      "TelemetryName": "walkin_freezer_door_ajar",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [300, 456, 633, 232, 102]
+    },
+    {
+      "DisplayName": "Walkin Freezer Compressor Health",
+      "TelemetryName": "walkin_freezer_compressor_health",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [99, 98, 97, 96, 95]
+    },
+    {
+      "DisplayName": "Walkin Freezer Mass Flow Rate",
+      "TelemetryName": "walkin_freezer_mass_flow_rate",
+      "IoTCDataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Kilograms by Hourly Mass Flow Rate.",
+      "RangeValues": [3, 1, 3.2, 3.1, 4.13, 4.15, 4.12, 4.01, 5.3, 5.12]
+    },
+    {
+      "DisplayName": "Walkin Freezer Volume Flow Rate",
+      "TelemetryName": "walkin_freezer_flow_rate",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [99, 98, 97, 96, 95]
+    },
+    {
+      "DisplayName": "Walkin Freezer Compressor Health",
+      "TelemetryName": "walkin_freezer_compressor_health",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [99, 98, 97, 96, 95]
+    },
+    {
+      "DisplayName": "Walkin Freezer Compressor Health",
+      "TelemetryName": "walkin_freezer_compressor_health",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "_comment": "",
+      "RangeValues": [99, 98, 97, 96, 95]
+    }
+  ]
+}
