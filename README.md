@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;[![Python 3.0](https://img.shields.io/badge/Python-3.0-blue.svg)](https://www.python.org/)&nbsp;[![OPCUA](https://img.shields.io/badge/OPCUA-Server-orange.svg)](https://opcfoundation.org/about/opc-technologies/opc-ua/)
 
 
 # Smart Kitchen Dynamic OPC-UA Emulation
