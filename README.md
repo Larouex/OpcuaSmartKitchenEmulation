@@ -49,10 +49,18 @@ The Site Topology file is used to link and create PLC kitchen components from th
 
 | Node              | Description                                                                            |
 | ----------------- | -------------------------------------------------------------------------------------- |
-| **SiteName**      | Free text to indicate the Resturant Name.H                                             |
+| **SiteName**      | Free text to indicate the Resturant Name.                                              |
 | **SitePrefix**    | This value is added as a prefex to enumerations indicated by the value of SiteCount.   |
 | **SiteCount**     | How many iterations of this site should generated for emulation.                       |
+
+The PlcList is defined as follows...
+
+| Node              | Description                                                                            |
 | ----------------- | -------------------------------------------------------------------------------------- |
+| **PlcName**       | Free text to indicate the PLC Emulation Name. Used to indicate Hospitality Equipment   |
+| **PlcCount**      | How many iterations of this site should generated for emulation.                       |
+| **PlcTagPrefix**  | This value is added as a prefex to enumerations indicated by the value of PlcCount.    |
+
 
 ````json
 {
