@@ -259,5 +259,5 @@ INFO: [TEST-VALIDATE] PLC File Name: standing-freezer PLC Count: 12 Plc Tag Pref
 INFO: [TEST-VALIDATE] Loading PLC Defintiion File (config/standing-freezer.json)
 INFO: [TEST-VALIDATE] PLC Name: StandingFreezer
 INFO: [TEST-VALIDATE] PLC Variable Count: 5
-INFO: [TEST-VALIDATE] PLC All Variable Count: 50310
+INFO: [TEST-VALIDATE] PLC All Variable Count: **50310**
 ````
