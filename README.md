@@ -1,5 +1,6 @@
-# OpcuaSmartKitchenEmulation
-OpcuaSmartKitchenEmulation
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
 # Smart Kitchen Dynamic OPC-UA Emulation
 Demonstrates the use of OPC-UA to Monitor the Equipment in a Smart Commercial Kitchen with Telemetry and Integration.
 
@@ -17,3 +18,10 @@ This demonstration is a reference implementation of the following...
 * System Integrators
 * Developers
 * Administrators of an OPC-UA System
+
+## Configuration Overview
+The overall goal of the emulation project is to use a series of related configuration files that support declarative definition of the telemetry from the OPCUA server. This approach makes it trivial to generate a large number of PLC emulations with fine grained control over the telemtry emiting frequency for subscribing clients.
+
+The Files and Relationships
+
+<img src="../assets/config-files-relationship.png" width="250"/>
