@@ -22,6 +22,24 @@ This demonstration is a reference implementation of the following...
 ## Configuration Overview
 The overall goal of the emulation project is to use a series of related configuration files that support declarative definition of the telemetry from the OPCUA server. This approach makes it trivial to generate a large number of PLC emulations with fine grained control over the telemtry emiting frequency for subscribing clients.
 
-The Files and Relationships
+### The Files and Relationships
 
 <img src="./assets/config-files-relationship.png" width="1000"/>
+
+
+#### ring-frquency.json
+The Ring Frequency file is used to define a set of telemtry frequencies that represent seconds and minutes. These definitions can then be assigned to telemetry variable that is being emulated and will publish based on the value. You can define these values and number of them anyway that meets your needs.
+
+````json
+{
+  "_last-accessed": "2023-02-24 10:47:49.732424",
+  "TelemetryRingsInSeconds": [
+    "Frequency",
+    {"Ring0": 1}, {"Ring1": 5}, {"Ring2": 10}, {"Ring3": 15}, {"Ring4": 20}, {"Ring5": 30}, {"Ring6": 40}, {"Ring7": 50}
+  ],
+  "TelemetryRingsInMinutes": [
+    "Frequency",
+    {"Ring0": 1}, {"Ring1": 5}, {"Ring2": 10}, {"Ring3": 15}, {"Ring4": 20}, {"Ring5": 30}, {"Ring6": 40}, {"Ring7": 50}
+  ]
+}
+````
