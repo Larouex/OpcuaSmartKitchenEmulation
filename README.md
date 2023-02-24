@@ -24,7 +24,7 @@ The overall goal of the emulation project is to use a series of related configur
 
 ### The Files and Relationships
 
-<img src="./assets/config-files-relationship.png" width="1000"/>
+<img src="./assets/config-files-relationship.png" width="750"/>
 
 
 #### ring-frquency.json
@@ -40,6 +40,58 @@ The Ring Frequency file is used to define a set of telemtry frequencies that rep
   "TelemetryRingsInMinutes": [
     "Frequency",
     {"Ring0": 1}, {"Ring1": 5}, {"Ring2": 10}, {"Ring3": 15}, {"Ring4": 20}, {"Ring5": 30}, {"Ring6": 40}, {"Ring7": 50}
+  ]
+}
+````
+
+#### site-topology.json
+The Site Topology file is used to link and create PLC kitchen components from the PLC definition files. The Sites node indicates a collection of sites that includes...
+
+SiteName  Free text to indicate the Resturant Name.
+SitePrefix  This value is added as a prefex to enumerations indicated by the value of SiteCount.
+SiteCount How many iterations of this site should generated for emulation.
+
+````json
+{
+  "_last-accessed": "2023-02-24 10:47:49.720507",
+  "Sites": [
+    {
+      "SiteName": "Burien",
+      "SitePrefix": "Burien-Shuckers-",
+      "SiteCount": 130,
+      "PlcList": [
+        {
+          "PlcName": "hvac-system",
+          "PlcCount": 1,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "walkin-freezer",
+          "PlcCount": 4,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "kitchen-fryer",
+          "PlcCount": 16,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "standing-fridge",
+          "PlcCount": 29,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "walkin-fridge",
+          "PlcCount": 18,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "standing-freezer",
+          "PlcCount": 12,
+          "PlcTagPrefix": "Shuckers-"
+        }
+      ]
+    }
   ]
 }
 ````
