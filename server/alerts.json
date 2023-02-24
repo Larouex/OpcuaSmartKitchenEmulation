@@ -27,6 +27,14 @@
     "standing-fridge": {
       "Loaded": "Loaded Standing Fridge file: {0}",
       "Updated": "Updated Standing Fridge file: {0}"
+    },
+    "walkin-fridge": {
+      "Loaded": "Loaded Walkin Fridge file: {0}",
+      "Updated": "Updated Walkin Fridge file: {0}"
+    },
+    "standing-freezer": {
+      "Loaded": "Loaded Standing Freezer file: {0}",
+      "Updated": "Updated Standing Freezer file: {0}"
     }
   }
 }

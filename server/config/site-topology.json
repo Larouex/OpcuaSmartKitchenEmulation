@@ -1,83 +1,40 @@
 {
-  "_last-accessed": "2023-02-23 14:33:41.977846",
+  "_last-accessed": "2023-02-24 10:47:49.720507",
   "Sites": [
     {
-      "SiteName": "Burien 001",
+      "SiteName": "Burien",
+      "SitePrefix": "Burien-Shuckers-",
+      "SiteCount": 130,
       "PlcList": [
         {
           "PlcName": "hvac-system",
           "PlcCount": 1,
-          "PlcTags": [
-            "Main"
-          ]
+          "PlcTagPrefix": "Shuckers-"
         },
         {
           "PlcName": "walkin-freezer",
           "PlcCount": 4,
-          "PlcTags": [
-            "South",
-            "West",
-            "East",
-            "North-East"
-          ]
+          "PlcTagPrefix": "Shuckers-"
         },
         {
           "PlcName": "kitchen-fryer",
           "PlcCount": 16,
-          "PlcTags": [
-            "South-right",
-            "South-middle-right",
-            "South-middle-left",
-            "South-left",
-            "West-right",
-            "West-middle-right",
-            "West-middle-left",
-            "West-left",
-            "East-right",
-            "East-middle-right",
-            "East-middle-left",
-            "East-left",
-            "North-East-right",
-            "North-East-middle-right",
-            "North-East-middle-left",
-            "North-East-left"
-          ]
+          "PlcTagPrefix": "Shuckers-"
         },
         {
           "PlcName": "standing-fridge",
           "PlcCount": 29,
-          "PlcTags": [
-            "South-cavas-front-bar",
-            "South-cavas-middle-bar",
-            "South-shuckers-front-bar",
-            "South-shuckers-middle-bar",
-            "South-shuckers-back-bar",
-            "South-shuckers-middle-kitchen",
-            "South-shuckers-front-kitchen",
-            "South-shuckers-front-waitstaff",
-            "West-right",
-            "West-middle-right",
-            "West-middle-left",
-            "West-left",
-            "East-right",
-            "East-middle-right",
-            "East-middle-left",
-            "East-left",
-            "North-East-right",
-            "North-East-middle-right",
-            "North-East-middle-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left",
-            "North-East-left"
-          ]
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "walkin-fridge",
+          "PlcCount": 18,
+          "PlcTagPrefix": "Shuckers-"
+        },
+        {
+          "PlcName": "standing-freezer",
+          "PlcCount": 12,
+          "PlcTagPrefix": "Shuckers-"
         }
       ]
     }

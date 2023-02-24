@@ -1,0 +1,63 @@
+{
+  "_last-accessed": "2023-02-23 11:56:09.167898",
+  "Name": "WalkinFridge",
+  "InterfacelId": "urn:larouexsmartkitchen:WalkinFridgeInterface:1",
+  "InterfaceInstanceName": "WalkinFridgeInterface",
+  "Variables": [
+    {
+      "DisplayName": "Walkin Fridge Temperature",
+      "NodeId": "ns=2;i=7",
+      "TelemetryName": "walkin_fridge_temperature",
+      "IoTCDataType": "float",
+      "Frequency": "Ring3",
+      "OnlyOnValueChange": false,
+      "RangeValueCount": 6,
+      "RangeValueCurrent": 1,
+      "RangeValues": [39.45, 39.23, 39.9, 41.54, 42.28, 43.23]
+    },
+    {
+      "DisplayName": "Walkin Fridge Humidity",
+      "NodeId": "ns=2;i=8",
+      "TelemetryName": "walkin_fridge_humidity",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring3",
+      "OnlyOnValueChange": false,
+      "RangeValueCount": 5,
+      "RangeValueCurrent": 1,
+      "RangeValues": [54.1, 63.0, 72.3, 73.4, 74.5]
+    },
+    {
+      "DisplayName": "Walkin Fridge Door Open Count",
+      "NodeId": "ns=2;i=9",
+      "TelemetryName": "walkin_fridge_door_open_count",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "RangeValueCount": 5,
+      "RangeValueCurrent": 1,
+      "RangeValues": [7, 9, 5, 11, 15]
+    },
+    {
+      "DisplayName": "Walkin Fridge Door Ajar",
+      "NodeId": "ns=2;i=10",
+      "TelemetryName": "walkin_fridge_door_ajar",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "RangeValueCount": 5,
+      "RangeValueCurrent": 1,
+      "RangeValues": [300, 456, 633, 232, 102]
+    },
+    {
+      "DisplayName": "Walkin Fridge Compressor Health",
+      "NodeId": "ns=2;i=11",
+      "TelemetryName": "walkin_fridge_compressor_health",
+      "IoTCDataType": "integer",
+      "Frequency": "Ring2",
+      "OnlyOnValueChange": false,
+      "RangeValueCount": 5,
+      "RangeValueCurrent": 1,
+      "RangeValues": [99, 98, 97, 96, 95]
+    }
+  ]
+}

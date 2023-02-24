@@ -129,21 +129,26 @@ async def main(argv):
   Log.info(logger_namespace + " Loading %s" % "Site Topology File (site-topology.json)")
   config_data = load_site_topology()
   Log.info(logger_namespace + " Enumerating Sites and PLC's")
-  for sites in config_data["Sites"]:
-    Log.info(logger_namespace + " Site Name: %s" % sites["SiteName"])
-    for plc_list in sites["PlcList"]:
-      plc_name = plc_list["PlcName"]
-      plc_count = plc_list["PlcCount"] 
-      plc_filename = "config/" + plc_name + ".json"
-      Log.info(logger_namespace + " PLC File Name: %s PLC Count: %i" % (plc_name, plc_count))
-      Log.info(logger_namespace + " Loading %s" % "PLC Defintiion File (" + plc_filename + ")")
-      plc_item = PlcItem(Log, plc_filename, plc_name)
-      plc_item_data =  plc_item.data
-      Log.info(logger_namespace + " PLC Name: %s" % plc_item_data["Name"])
-      plc_item_data_count = len(plc_item_data["Variables"])
-      Log.info(logger_namespace + " PLC Variable Count: %s" % plc_item_data_count)
-      plc_item_data_count_all += (plc_item_data_count * plc_count)
-      Log.info(logger_namespace + " PLC All Variable Count: %s" % plc_item_data_count_all)
+  for site in config_data["Sites"]:
+    site_name = site["SiteName"]
+    site_prefix = site["SitePrefix"]
+    site_count = site["SiteCount"]
+    Log.info(logger_namespace + " Site Name: %s Site Prefix: %s Site Count: %i" % (site_name, site_prefix, site_count))
+    for x in range(0, site_count):
+      for plc_list in site["PlcList"]:
+        plc_name = plc_list["PlcName"]
+        plc_count = plc_list["PlcCount"] 
+        plc_prefix = plc_list["PlcTagPrefix"] 
+        plc_filename = "config/" + plc_name + ".json"
+        Log.info(logger_namespace + " PLC File Name: %s PLC Count: %i Plc Tag Prefix: %s" % (plc_name, plc_count, plc_prefix))
+        Log.info(logger_namespace + " Loading %s" % "PLC Defintiion File (" + plc_filename + ")")
+        plc_item = PlcItem(Log, plc_filename, plc_name)
+        plc_item_data =  plc_item.data
+        Log.info(logger_namespace + " PLC Name: %s" % plc_item_data["Name"])
+        plc_item_data_count = len(plc_item_data["Variables"])
+        Log.info(logger_namespace + " PLC Variable Count: %s" % plc_item_data_count)
+        plc_item_data_count_all += (plc_item_data_count * plc_count)
+        Log.info(logger_namespace + " PLC All Variable Count: %s" % plc_item_data_count_all)
       
 
 
