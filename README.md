@@ -120,13 +120,13 @@ The **Variables** collection list define the telemetry value that is emulated by
 
 | Node                      | Description                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------ |
-| **DisplayName**                  | Free text to indicate the PLC/Device Name.                                     |
-| **TelemetryName**          | The DTDL Interface ID.                                                         |
-| **DataType** | DTDL IoTHub Interface Name.                                                    |
-| **Frequency** | DTDL IoTHub Interface Name.                                                    |
-| **OnlyOnValueChange** | DTDL IoTHub Interface Name.                                                    |
-| **_comment** | DTDL IoTHub Interface Name.                                                    |
-| **RangeValues** | DTDL IoTHub Interface Name.                                                    |
+| **DisplayName**           | Free text to describe the Variable/Telemetry Name.                             |
+| **TelemetryName**         | Free text to indicate the Variable/Telememetry Name.                           |
+| **DataType**              | Data type for processing the variable value emitted.                           |
+| **Frequency**             | This value points to the frequency indicated in the **ring-frquency.json**     |
+| **OnlyOnValueChange**     | Boolean that indicated to the OPCUA server if the value emitted gets a publish.|
+| **_comment**              | Ignored, used for in file reading clarity.                                     |
+| **RangeValues**           | N+1 values you can use to generate variable values.                            |
 
 ````json
 {
