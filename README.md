@@ -24,4 +24,4 @@ The overall goal of the emulation project is to use a series of related configur
 
 The Files and Relationships
 
-<img src="./assets/config-files-relationship.png" width="250"/>
+<img src="./assets/config-files-relationship.png" width="1000"/>
