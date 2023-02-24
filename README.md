@@ -20,7 +20,7 @@ This demonstration is a reference implementation of the following...
 * Administrators of an OPC-UA System
 
 ## Configuration Overview
-The overall goal of the emulation project is to use a series of related configuration files that support declarative definition of the telemetry from the OPCUA server. This approach makes it trivial to generate a large number of PLC emulations with fine grained control over the telemtry emiting frequency for subscribing clients.
+The goal of the emulation project is to use a series of related configuration files that support declarative definition of the telemetry from the OPCUA server. This approach makes it trivial to generate a large number of PLC emulations with fine grained control over the telemetry emiting frequency for subscribing clients.
 
 ### The Files and Relationships
 
@@ -28,7 +28,7 @@ The overall goal of the emulation project is to use a series of related configur
 
 
 #### ring-frquency.json
-The Ring Frequency file is used to define a set of telemtry frequencies that represent seconds and minutes. These definitions can then be assigned to telemetry variable that is being emulated and will publish based on the value. You can define these values and number of them anyway that meets your needs.
+The Ring Frequency file is used to define a set of telemetry frequencies that represent seconds and minutes. These definitions can then be assigned to telemetry variables that are emulated and will publish based on the value. You can define these values and number that meets your needs.
 
 ````json
 {
