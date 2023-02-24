@@ -7,7 +7,7 @@
     {
       "DisplayName": "HVAC Airflow Temperature",
       "TelemetryName": "hvac_airflow_temperature",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring0",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Fahrenheit and Reported by Minute.",
@@ -16,7 +16,7 @@
     {
       "DisplayName": "HVAC Airflow CFM",
       "TelemetryName": "hvac_cfm_airflow",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "TelemetryRingsInMinutes.Ring0",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Cubic Feet per Minute(CPM) and Reported by Minute.",
@@ -25,7 +25,7 @@
     {
       "DisplayName": "HVAC Main Motor RPM",
       "TelemetryName": "hvac_rpm_main_motor",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "TelemetryRingsInMinutes.Ring0",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Revolutions by Minute(RPM) and Reported by Minute.",
@@ -36,7 +36,7 @@
     {
       "DisplayName": "HVAC Mass Flow Rate",
       "TelemetryName": "hvac_mass_flow_rate",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Kilograms by Hourly Mass Flow Rate.",
@@ -45,7 +45,7 @@
     {
       "DisplayName": "HVAC Volume Flow Rate",
       "TelemetryName": "hvac_volume_flow_rate",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Litres by Hourly Volume Rate",
@@ -57,7 +57,7 @@
     {
       "DisplayName": "HVAC Power Inout to Drive",
       "TelemetryName": "hvac_power_input_to_drive",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Kilowatts by Hourly Rate",
@@ -68,7 +68,7 @@
     {
       "DisplayName": "HVAC Developed Pressure",
       "TelemetryName": "hvac_developed_pressure",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Desired Developed Pressure of the System Measured kiloPascal units of Pressure by Hourly Rate.",
@@ -80,7 +80,7 @@
     {
       "DisplayName": "HVAC Static Pressure",
       "TelemetryName": "hvac_static_pressure",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Actual Static Pressure of the System Measured kiloPascal units of Pressure by Hourly Rate.",

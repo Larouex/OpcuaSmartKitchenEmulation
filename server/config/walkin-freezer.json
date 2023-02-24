@@ -7,7 +7,7 @@
     {
       "DisplayName": "Walkin Freezer Temperature",
       "TelemetryName": "walkin_freezer_temperature",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "Ring3",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -16,7 +16,7 @@
     {
       "DisplayName": "Walkin Freezer Humidity",
       "TelemetryName": "walkin_freezer_humidity",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring3",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -25,7 +25,7 @@
     {
       "DisplayName": "Walkin Freezer Door Open Count",
       "TelemetryName": "walkin_freezer_door_open_count",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Door Open Count indicates the number of times the freezer is opened over an hourly period.",
@@ -34,7 +34,7 @@
     {
       "DisplayName": "Walkin Freezer Door Ajar",
       "TelemetryName": "walkin_freezer_door_ajar",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -43,7 +43,7 @@
     {
       "DisplayName": "Walkin Freezer Compressor Health",
       "TelemetryName": "walkin_freezer_compressor_health",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -52,7 +52,7 @@
     {
       "DisplayName": "Walkin Freezer Mass Flow Rate",
       "TelemetryName": "walkin_freezer_mass_flow_rate",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "TelemetryRingsInMinutes.Ring8",
       "OnlyOnValueChange": false,
       "_comment": "Measured in Kilograms by Hourly Mass Flow Rate.",
@@ -61,7 +61,7 @@
     {
       "DisplayName": "Walkin Freezer Volume Flow Rate",
       "TelemetryName": "walkin_freezer_flow_rate",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -70,7 +70,7 @@
     {
       "DisplayName": "Walkin Freezer Compressor Health",
       "TelemetryName": "walkin_freezer_compressor_health",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "_comment": "",
@@ -79,7 +79,7 @@
     {
       "DisplayName": "Walkin Freezer Compressor Health",
       "TelemetryName": "walkin_freezer_compressor_health",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "_comment": "",

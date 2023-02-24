@@ -7,7 +7,7 @@
     {
       "DisplayName": "Fryer Temperature",
       "TelemetryName": "fryer_temperature",
-      "IoTCDataType": "float",
+      "DataType": "float",
       "Frequency": "Ring3",
       "OnlyOnValueChange": false,
       "RangeValues": [349.2, 332.1, 350.9, 340.9, 353.7, 351.4]
@@ -15,7 +15,7 @@
     {
       "DisplayName": "Fryer Oil Quality",
       "TelemetryName": "fryer_oil_quality",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring3",
       "OnlyOnValueChange": false,
       "RangeValues": [100, 95, 92, 87, 86, 79, 75, 67, 62, 50]
@@ -23,7 +23,7 @@
     {
       "DisplayName": "Fryer Heater Health",
       "TelemetryName": "fryer_heater_health",
-      "IoTCDataType": "integer",
+      "DataType": "integer",
       "Frequency": "Ring2",
       "OnlyOnValueChange": false,
       "RangeValues": [99, 98, 97, 96, 95]

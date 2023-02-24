@@ -49,7 +49,7 @@ The Site Topology file is used to link and create PLC kitchen components from th
 
 | Node              | Description                                                                            |
 | ----------------- | -------------------------------------------------------------------------------------- |
-| **SiteName**      | Free text to indicate the Resturant Name.                                              |
+| **SiteName**      | Free text to indicate the Restaurant Name.                                             |
 | **SitePrefix**    | This value is added as a prefex to enumerations indicated by the value of SiteCount.   |
 | **SiteCount**     | How many iterations of this site should generated for emulation.                       |
 
@@ -57,10 +57,11 @@ The PlcList is defined as follows...
 
 | Node              | Description                                                                            |
 | ----------------- | -------------------------------------------------------------------------------------- |
-| **PlcName**       | Free text to indicate the PLC Emulation Name. Used to indicate Hospitality Equipment   |
+| **PlcName**       | Free text to indicate the PLC Emulation Name. Used to indicate Hospitality Equipment.  |
 | **PlcCount**      | How many iterations of this site should generated for emulation.                       |
 | **PlcTagPrefix**  | This value is added as a prefex to enumerations indicated by the value of PlcCount.    |
 
+The PlcName is also used to indicate the pattern of the file name of the PLC file. For example **hvac-system** indicates that there is a file named **hvac-system.json** in the /config folder.
 
 ````json
 {
@@ -101,6 +102,122 @@ The PlcList is defined as follows...
           "PlcCount": 12,
           "PlcTagPrefix": "Shuckers-"
         }
+      ]
+    }
+  ]
+}
+````
+#### hvac-system.json
+This file is just one of the files used in the emulation for creating instances of the PLC device and telemetry variables.
+
+| Node                      | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **Name**                  | Free text to indicate the PLC/Device Name.                                     |
+| **InterfacelId**          | The DTDL Interface ID.                                                         |
+| **InterfaceInstanceName** | DTDL IoTHub Interface Name.                                                    |
+
+The **Variables** collection list define the telemetry value that is emulated by the OPCUA server and provide a subscriable value for clients to track...
+
+| Node                      | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **DisplayName**                  | Free text to indicate the PLC/Device Name.                                     |
+| **TelemetryName**          | The DTDL Interface ID.                                                         |
+| **DataType** | DTDL IoTHub Interface Name.                                                    |
+| **Frequency** | DTDL IoTHub Interface Name.                                                    |
+| **OnlyOnValueChange** | DTDL IoTHub Interface Name.                                                    |
+| **_comment** | DTDL IoTHub Interface Name.                                                    |
+| **RangeValues** | DTDL IoTHub Interface Name.                                                    |
+
+````json
+{
+  "_last-accessed": "2023-02-23 11:56:09.167898",
+  "Name": "HVAC",
+  "InterfacelId": "urn:larouexsmartkitchen:HVACInterface:1",
+  "InterfaceInstanceName": "HVACInterface",
+  "Variables": [
+    {
+      "DisplayName": "HVAC Airflow Temperature",
+      "TelemetryName": "hvac_airflow_temperature",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring0",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Fahrenheit and Reported by Minute.",
+      "RangeValues": [72.45, 73.23, 73.9, 71.54, 72.28, 73.23]
+    },
+    {
+      "DisplayName": "HVAC Airflow CFM",
+      "TelemetryName": "hvac_cfm_airflow",
+      "DataType": "integer",
+      "Frequency": "TelemetryRingsInMinutes.Ring0",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Cubic Feet per Minute(CPM) and Reported by Minute.",
+      "RangeValues": [127, 121, 131, 130, 129]
+    },
+    {
+      "DisplayName": "HVAC Main Motor RPM",
+      "TelemetryName": "hvac_rpm_main_motor",
+      "DataType": "integer",
+      "Frequency": "TelemetryRingsInMinutes.Ring0",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Revolutions by Minute(RPM) and Reported by Minute.",
+      "RangeValues": [
+        18000, 18500, 18200, 19000, 19200, 18000, 18500, 18200, 19000, 19200
+      ]
+    },
+    {
+      "DisplayName": "HVAC Mass Flow Rate",
+      "TelemetryName": "hvac_mass_flow_rate",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Kilograms by Hourly Mass Flow Rate.",
+      "RangeValues": [3, 1, 3.2, 3.1, 4.13, 4.15, 4.12, 4.01, 5.3, 5.12]
+    },
+    {
+      "DisplayName": "HVAC Volume Flow Rate",
+      "TelemetryName": "hvac_volume_flow_rate",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Litres by Hourly Volume Rate",
+      "RangeValues": [
+        1102.21, 1115.33, 1215.32, 1323.56, 1398.87, 1102.12, 1278.98, 1245.32,
+        1100.45, 1189.11
+      ]
+    },
+    {
+      "DisplayName": "HVAC Power Inout to Drive",
+      "TelemetryName": "hvac_power_input_to_drive",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Measured in Kilowatts by Hourly Rate",
+      "RangeValues": [
+        1102, 1115, 1215, 1323, 1398, 1102, 1278, 1245, 1100, 1189
+      ]
+    },
+    {
+      "DisplayName": "HVAC Developed Pressure",
+      "TelemetryName": "hvac_developed_pressure",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Desired Developed Pressure of the System Measured kiloPascal units of Pressure by Hourly Rate.",
+      "RangeValues": [
+        101.325, 101.333, 101.121, 101.432, 101.65, 102.112, 102, 544, 101.547,
+        101.54
+      ]
+    },
+    {
+      "DisplayName": "HVAC Static Pressure",
+      "TelemetryName": "hvac_static_pressure",
+      "DataType": "float",
+      "Frequency": "TelemetryRingsInMinutes.Ring8",
+      "OnlyOnValueChange": false,
+      "_comment": "Actual Static Pressure of the System Measured kiloPascal units of Pressure by Hourly Rate.",
+      "RangeValues": [
+        101.325, 101.333, 101.121, 101.432, 101.65, 102.112, 102, 544, 101.547,
+        101.54
       ]
     }
   ]
