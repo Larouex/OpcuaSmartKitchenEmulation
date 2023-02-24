@@ -223,3 +223,41 @@ The **Variables** collection list define the telemetry value that is emulated by
   ]
 }
 ````
+In this repository project, we have the following PC files...
+
+* kitchen-fryer
+* standing-freezer
+* walkin-freezer
+* walkin-fridge
+* kitchen-fryer
+* hvac-system
+
+## Test and Validate the Configuration
+The file **test-validate.py** is a Python app that tests the configuration files.
+
+````bash
+cd server
+python .\test-validate.py -v
+````
+Running this file will result in demonstrating that we can generate 50310 variables for emmitting telemetry...
+````bash
+...
+INFO: [TEST-VALIDATE] PLC Name: KitchenFryer
+INFO: [TEST-VALIDATE] PLC Variable Count: 3
+INFO: [TEST-VALIDATE] PLC All Variable Count: 50015
+INFO: [TEST-VALIDATE] PLC File Name: standing-fridge PLC Count: 29 Plc Tag Prefix: Shuckers-
+INFO: [TEST-VALIDATE] Loading PLC Defintiion File (config/standing-fridge.json)
+INFO: [TEST-VALIDATE] PLC Name: StandingFridge
+INFO: [TEST-VALIDATE] PLC Variable Count: 5
+INFO: [TEST-VALIDATE] PLC All Variable Count: 50160
+INFO: [TEST-VALIDATE] PLC File Name: walkin-fridge PLC Count: 18 Plc Tag Prefix: Shuckers-
+INFO: [TEST-VALIDATE] Loading PLC Defintiion File (config/walkin-fridge.json)
+INFO: [TEST-VALIDATE] PLC Name: WalkinFridge
+INFO: [TEST-VALIDATE] PLC Variable Count: 5
+INFO: [TEST-VALIDATE] PLC All Variable Count: 50250
+INFO: [TEST-VALIDATE] PLC File Name: standing-freezer PLC Count: 12 Plc Tag Prefix: Shuckers-
+INFO: [TEST-VALIDATE] Loading PLC Defintiion File (config/standing-freezer.json)
+INFO: [TEST-VALIDATE] PLC Name: StandingFreezer
+INFO: [TEST-VALIDATE] PLC Variable Count: 5
+INFO: [TEST-VALIDATE] PLC All Variable Count: 50310
+````
