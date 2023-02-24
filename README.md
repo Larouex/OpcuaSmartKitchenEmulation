@@ -47,9 +47,12 @@ The Ring Frequency file is used to define a set of telemtry frequencies that rep
 #### site-topology.json
 The Site Topology file is used to link and create PLC kitchen components from the PLC definition files. The Sites node indicates a collection of sites that includes...
 
-SiteName  Free text to indicate the Resturant Name.
-SitePrefix  This value is added as a prefex to enumerations indicated by the value of SiteCount.
-SiteCount How many iterations of this site should generated for emulation.
+| Node              | Description                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| **SiteName**      | Free text to indicate the Resturant Name.H                                             |
+| **SitePrefix**    | This value is added as a prefex to enumerations indicated by the value of SiteCount.   |
+| **SiteCount**     | How many iterations of this site should generated for emulation.                       |
+| ----------------- | -------------------------------------------------------------------------------------- |
 
 ````json
 {
